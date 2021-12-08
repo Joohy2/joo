@@ -26,12 +26,12 @@ export class AuthService {
     public jwtHelper: JwtHelperService) {}
 
     prepEndpoint(ep) {
-      // 1. 로컬 서버에서 개발시
-      // return 'http://localhost:3000/' + ep;
+      //1. 로컬 서버에서 개발시
+      return 'http://localhost:3000/' + ep;
       // 2. 클라우드 서버에서 운영시
-         return ep;
+    //      return ep;
+     }
     // }
-    }
 
   
 //서버에 사용자정보 등록을 요청하고 실패/성공의 결과를 받아서 리턴해주는 함수
